@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../image/logovlu.png"
+      class="favicon"
+    />
     <title>VLU - Trung tâm phát triển năng lực</title>
     <link rel="stylesheet" href="../css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body onload="myFunction()">
     <div id="loading">
@@ -35,7 +45,11 @@
             viên Văn Lang
           </h6>
           <div class="startNow">
-            <button type="button" href="navTool" class="btn btn_startNow">
+            <button
+              type="button"
+              onclick="dieuHuong1()"
+              class="btn btn_startNow"
+            >
               Bắt đầu ngay
             </button>
           </div>
@@ -170,8 +184,82 @@
           </div>
         </div>
       </div>
-      <section class="infor"></section>
-      <div class="deterTarget"></div>
+      <button onclick="topFunction()" id="btn_onTop" title="Go to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </button>
+      <section class="infor">
+        <div class="container">
+          <div class="title infor_Title">
+            <h1>BẠN ĐANG BĂN KHOĂN VỀ VIỆC CHỌN NGÀNH</h1>
+          </div>
+          <div class="infor_content">
+            <div class="infor_image">
+              <img src="../image/img-left.png" alt="" />
+            </div>
+            <div class="infor_text">
+              <h3>Hãy thử làm các công cụ định hướng bên trên</h3>
+              <p>
+                Keep a competitive edge by truly understanding the voice of your
+                customers. Customer satisfaction surveys help you connect at
+                multiple touchpoints to find out exactly what your customers
+                want, need, and expect.
+              </p>
+              <div class="startNow">
+                <button
+                  type="button"
+                  onclick="dieuHuong1()"
+                  class="btn btn_startNow"
+                >
+                  Bắt đầu ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="deterTarget">
+        <div class="container">
+          <div class="title">
+            <div class="title-text">XÁC ĐỊNH MỤC TIÊU</div>
+          </div>
+          <div class="nT_content">
+            <div class="card card1">
+              <div class="card-custom">
+                <a href="#">
+                  <div class="ribbon ribbon-top-right">
+                    <span>VLU</span>
+                  </div>
+                  <img
+                    src="../image/goals.jpeg"
+                    class="card-image"
+                    alt="SMART"
+                  />
+                  <div class="card-content">
+                    <h4 class="card-title">✅ S.M.A.R.T</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card card2">
+              <div class="card-custom">
+                <a href="#">
+                  <div class="ribbon ribbon-top-right">
+                    <span>VLU</span>
+                  </div>
+                  <img
+                    src="../image/goals.jpeg"
+                    class="card-image"
+                    alt="GROW"
+                  />
+                  <div class="card-content">
+                    <h4 class="card-title">✅ G.R.O.W</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../js/index.js"></script>

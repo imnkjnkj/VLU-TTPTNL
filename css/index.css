@@ -19,12 +19,20 @@
   font-family: nhi-thin;
   src: url(../fonts/BarlowSemiCondensed-Thin.ttf);
 }
+header .favicon {
+  height: 16px;
+  width: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
 * {
   /* font-family: "Barlow Semi Condensed", sans-serif; */
   font-family: nhi-eLight;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: -1px;
 }
 a {
   text-decoration: none;
@@ -63,6 +71,8 @@ a {
 img,
 svg {
   vertical-align: middle;
+  height: auto;
+  max-width: 100%;
 }
 /* Loader */
 #loading {
@@ -125,6 +135,7 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   height: 47.75rem;
+  position: relative;
 }
 .banner .content {
   padding: 20px 0;
@@ -170,21 +181,21 @@ svg {
   letter-spacing: -0.72px;
   margin-bottom: 0.5rem;
 }
-.banner .btn_startNow {
+.btn_startNow {
   background-color: var(--green);
 }
-.banner .btn_startNow:hover {
+.btn_startNow:hover {
   background-color: #1a6b2d;
 }
-.banner .startNow {
-  padding-top: 23.875rem;
+.startNow {
+  padding-top: 24.1rem;
   margin-bottom: 1rem;
 }
-.navTool .container .title {
+.title {
   margin-bottom: 8px;
   text-align: center;
 }
-.navTool .container .title-text {
+.container .title-text {
   display: inline-block;
   padding: 0.46875rem 0.75rem;
   font-size: 1.875rem;
@@ -198,7 +209,7 @@ svg {
   border-radius: 0.25rem;
 }
 
-.container .nT_content .card .card-custom .ribbon {
+.container .card .card-custom .ribbon {
   position: absolute;
   right: -3px;
   top: -3px;
@@ -208,7 +219,7 @@ svg {
   height: 40px;
   text-align: right;
 }
-.container .nT_content .card .card-custom .ribbon::before,
+.container .card .card-custom .ribbon::before,
 .ribbon::after {
   position: absolute;
   z-index: -1;
@@ -221,7 +232,7 @@ svg {
   right: 0;
   border-color: #8f0808 #8f0808 transparent transparent;
 }
-.container .nT_content .card .card-custom .ribbon span {
+.container .card .card-custom .ribbon span {
   position: absolute;
   display: block;
   font-size: 10px;
@@ -237,23 +248,23 @@ svg {
   width: 100px;
 }
 /* top right  */
-.container .nT_content .card .card-custom .ribbon-top-right {
+.container .card .card-custom .ribbon-top-right {
   top: -3px;
   right: -3px;
 }
-.container .nT_content .card .card-custom .ribbon-top-right::before,
+.container .card .card-custom .ribbon-top-right::before,
 .ribbon-top-right::after {
   border-top-color: transparent;
 }
-.container .nT_content .card .card-custom .ribbon-top-right::before {
+.container .card .card-custom .ribbon-top-right::before {
   top: -3px;
   right: 35px;
 }
-.container .nT_content .card .card-custom .ribbon-top-right::after {
+.container .card .card-custom .ribbon-top-right::after {
   bottom: 1px;
   right: 0px;
 }
-.container .nT_content .card .card-custom .ribbon-top-right span {
+.container .card .card-custom .ribbon-top-right span {
   right: -34px;
   top: 8px;
   transform: rotate(45deg);
@@ -263,52 +274,121 @@ svg {
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
 }
+.navTool .container .nT_content {
+  flex-wrap: wrap;
+}
 .container .nT_content .card4 {
   margin-left: 17%;
+}
+.navTool .container .nT_content .card {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }
 .container .nT_content .card {
   padding: 0 15px;
   text-align: center;
   min-height: 1px;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
 }
-.container .nT_content .card .card-custom {
+.container .card .card-custom {
   border-radius: 0.25rem;
   border: 1px solid var(--red);
   margin: 15px 0px;
   box-shadow: 5px 5px 10px 0 #a5b3b3;
   position: relative;
 }
-.container .nT_content .card .card-custom:hover {
+.container .card .card-custom:hover {
   box-shadow: 5px 5px 10px 0 #383d3d;
 }
 
-.container .nT_content .card .card-image {
+.container .card .card-image {
   width: 100%;
 }
 
-.container .nT_content .card .card-title {
+.container .card .card-title {
   font-family: nhi;
   margin-bottom: 12px;
   font-size: 1.5rem;
   color: var(--red);
 }
 .container,
-.nT_content .card .card-content {
+.card .card-content {
   padding: 20px;
 }
-.container .nT_content .card .card-text {
+.container .card .card-text {
   font-family: nhi;
   text-align: left;
   font-weight: 500;
   line-height: 1.5rem;
   font-size: 1rem;
   letter-spacing: -1px;
+}
+#btn_onTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 2.5px 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 24px; /* Increase font size */
+}
+
+#btn_onTop:hover {
+  background-color: rgb(204, 15, 15); /* Add a dark-grey background on hover */
+}
+.infor {
+  background-color: #f7f8fa;
+  color: #4b505e;
+  padding: 48px;
+}
+.infor .infor_Title h1 {
+  font-size: 38px;
+  font-family: nhi;
+}
+.infor .infor_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.infor .infor_content .infor_image {
+  width: 150%;
+  height: auto;
+  padding: 0 15px;
+}
+p {
+  padding-bottom: 12px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+h3 {
+  font-size: 28px;
+  font-family: nhi;
+  padding-bottom: 12px;
+}
+.infor .infor_content .infor_text .startNow {
+  padding: 6px 12px;
+  text-align: center;
+}
+.deterTarget .container .nT_content .card1 {
+  margin-left: 156px;
+}
+.deterTarget .container .nT_content .card2 {
+  margin-right: 156px;
+}
+
+.deterTarget .container .nT_content .card {
+  flex-wrap: nowrap;
 }
