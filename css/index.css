@@ -383,12 +383,101 @@ h3 {
   text-align: center;
 }
 .deterTarget .container .nT_content .card1 {
-  margin-left: 156px;
+  margin-left: 170px;
 }
 .deterTarget .container .nT_content .card2 {
-  margin-right: 156px;
+  margin-right: 170px;
 }
 
 .deterTarget .container .nT_content .card {
   flex-wrap: nowrap;
+}
+li {
+  list-style: none;
+  color: #4b505e;
+  padding-bottom: 13px;
+}
+li a:hover {
+  color: var(--primary);
+}
+.footer {
+  border-top: 1px solid black;
+}
+.footer .top {
+  padding: 30px 0 220px;
+  position: relative;
+  overflow-x: hidden;
+}
+.footer .top .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #4b505e;
+  position: relative;
+}
+.title-i {
+  padding-bottom: 15px;
+}
+.footer .top .title-text {
+  font-size: 21px;
+  padding: 5px 8px;
+}
+.footer .top .item1 .title-text {
+  background-color: var(--primary);
+}
+.footer .top .item2 .title-text {
+  background-color: var(--green);
+}
+.footer .top .item {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer .top .item1 {
+  width: 200%;
+}
+.footer .top .item1 span {
+  font-family: nhi;
+  font-size: 14px;
+}
+.footer .top .item3 {
+  display: inline-block;
+}
+.footer .top .item3 img {
+  width: 44px;
+  height: 44px;
+}
+.footer .top .bg {
+  background-image: url("../image/footer_bg.png");
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 266px;
+}
+.footer .top .bg .cycle {
+  background: url("../image/cyclist.gif") no-repeat 50%;
+  width: 330px;
+  height: 105px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  animation: myfirst 22s linear infinite;
+}
+.footer .top .bg .volk {
+  background: url("../image/volks.gif") no-repeat 50%;
+  width: 330px;
+  height: 105px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  animation: myfirst 22s linear infinite;
+}
+.footer .bottom {
+  color: #7f88a6;
+  padding: 0 0 20px;
+  text-align: center;
 }
