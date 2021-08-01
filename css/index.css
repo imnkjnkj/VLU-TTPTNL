@@ -141,7 +141,7 @@ svg {
   background-image: url(../image/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 47.75rem;
+  /* height: 47.75rem; */
   position: relative;
 }
 .banner .content {
@@ -470,7 +470,7 @@ li a:hover {
   position: absolute;
   bottom: 0;
   left: 30%;
-  animation: move 19s linear infinite;
+  animation: move 30s linear infinite;
 }
 .footer .top .bg .volk {
   background: url("../image/volks.gif") no-repeat 50%;
@@ -481,7 +481,7 @@ li a:hover {
   position: absolute;
   bottom: 0;
   left: 30%;
-  animation: move 18s linear infinite;
+  animation: move 22s linear infinite;
 }
 .footer .bottom {
   color: #7f88a6;
