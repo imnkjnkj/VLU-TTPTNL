@@ -141,7 +141,6 @@ svg {
   background-image: url(../image/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 47.75rem; */
   position: relative;
 }
 .banner .content {
