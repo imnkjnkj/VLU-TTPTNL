@@ -14,7 +14,14 @@
   font-family: nhi-bold;
   src: url(../fonts/BarlowSemiCondensed-Bold.ttf);
 }
-
+@keyframes move {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
 @font-face {
   font-family: nhi-thin;
   src: url(../fonts/BarlowSemiCondensed-Thin.ttf);
@@ -459,11 +466,11 @@ li a:hover {
   width: 330px;
   height: 105px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 25%;
   position: absolute;
   bottom: 0;
   left: 30%;
-  animation: myfirst 22s linear infinite;
+  animation: move 19s linear infinite;
 }
 .footer .top .bg .volk {
   background: url("../image/volks.gif") no-repeat 50%;
@@ -474,10 +481,12 @@ li a:hover {
   position: absolute;
   bottom: 0;
   left: 30%;
-  animation: myfirst 22s linear infinite;
+  animation: move 18s linear infinite;
 }
 .footer .bottom {
   color: #7f88a6;
   padding: 0 0 20px;
   text-align: center;
+  letter-spacing: 0.2px;
+  font-size: 16px;
 }
