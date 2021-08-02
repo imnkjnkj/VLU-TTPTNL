@@ -388,6 +388,7 @@ h3 {
   padding: 6px 12px;
   text-align: center;
 }
+
 .deterTarget .container .nT_content .card1 {
   margin-left: 170px;
 }
@@ -488,4 +489,86 @@ li a:hover {
   text-align: center;
   letter-spacing: 0.2px;
   font-size: 16px;
+}
+
+/* IphoneX */
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+  .login,
+  .banner .sub-title,
+  .banner .title-text {
+    display: none;
+  }
+  .banner {
+    height: 35vh;
+    background-position: 50%;
+  }
+  .banner .startNow {
+    padding-top: 20vh;
+    margin-bottom: 1vh;
+  }
+  .container .nT_content .card4 {
+    margin-left: 0%;
+  }
+  .navTool .container .nT_content .card {
+    flex: 0 0 0%;
+    max-width: 100%;
+  }
+  .container .nT_content .card-custom {
+    width: 100%;
+  }
+  .container .nT_content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .container .nT_content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .nT_content .card {
+    padding: 0 0px;
+  }
+  .infor .infor_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .infor {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .infor .infor_content .infor_image {
+    width: 100%;
+    padding: 0px;
+  }
+  .infor .infor_content .infor_text {
+    padding: 0 15px;
+  }
+  .deterTarget .container .nT_content .card1 {
+    margin-left: 0px;
+  }
+  .deterTarget .container .nT_content .card2 {
+    margin-right: 0px;
+  }
+  .footer .top .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .top .item {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .footer .top .item1 {
+    padding-bottom: 10px;
+  }
+  .footer .top .item1 span {
+    font-family: nhi;
+    font-size: 16px;
+  }
+  .footer .bottom {
+    padding: 15px 20px;
+  }
 }
