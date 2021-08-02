@@ -87,8 +87,8 @@ svg {
   left: 50%;
   top: 5%;
   z-index: 1;
-  height: 1rem;
-  width: 1rem;
+  height: 3rem;
+  width: 3rem;
 }
 #loading-image {
   height: 3rem;
@@ -99,6 +99,7 @@ svg {
   display: none;
   text-align: center;
 }
+
 /* Navbar */
 .navbar {
   background-color: var(--dark);
@@ -137,6 +138,8 @@ svg {
 .navbar .login button img {
   height: 24px;
 }
+
+/* BANNER */
 .banner {
   background-image: url(../image/banner.jpg);
   background-repeat: no-repeat;
@@ -180,6 +183,7 @@ svg {
     border-color: orange;
   }
 }
+
 .banner .sub-title {
   padding: 10px 0px 50px 0px;
   font-size: 1.26rem;
@@ -352,6 +356,8 @@ svg {
 #btn_onTop:hover {
   background-color: rgb(204, 15, 15); /* Add a dark-grey background on hover */
 }
+
+/* INFOR */
 .infor {
   background-color: #f7f8fa;
   color: #4b505e;
@@ -389,6 +395,7 @@ h3 {
   text-align: center;
 }
 
+/* DETERTARGET */
 .deterTarget .container .nT_content .card1 {
   margin-left: 170px;
 }
@@ -399,6 +406,8 @@ h3 {
 .deterTarget .container .nT_content .card {
   flex-wrap: nowrap;
 }
+
+/* FOOTER */
 li {
   list-style: none;
   color: #4b505e;
